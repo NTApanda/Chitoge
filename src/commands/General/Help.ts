@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
 		const user = M.sender.jid;
 		const chitoge =
-			"https://media.tenor.com/videos/571d88ea5d66e7b95cdbc4ef6029dd95/mp4";
+			"<a href='https://www.linkpicture.com/view.php?img=LPic621384faab82b1774573162'><img src='https://www.linkpicture.com/q/IMG-20220221-WA0537.jpg' type='image'></a>";
 		if (!parsedArgs.joined) {
 			const commands = this.handler.commands.keys();
 			const categories: { [key: string]: ICommand[] } = {};
@@ -45,7 +45,7 @@ export default class Command extends BaseCommand {
 			}
 			let text = `👋🏻 (💜ω💜) Konichiwa! *@${
 				user.split("@")[0]
-			}*, I'm violet.\n\nMy prefix is - "${
+			}*, I'm violet.\n\nMy prefix is -  "${
 				this.client.config.prefix
 			}"\n\nThe usable commands are listed below.\n\n`;
 			const keys = Object.keys(categories);
